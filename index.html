@@ -1,348 +1,316 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yushan's Homepage</title>
-  <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-  <link rel="icon" href="images/icon.png" type="image/png">
-  <!--<link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">-->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <!-- Bulma Version 0.7.5-->
-  <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css" />
-  <link href='css/style.css' rel='stylesheet' type='text/css'>
-  <script defer src="font-awesome-5.9.0/js/brands.min.js"></script>
-  <script defer src="font-awesome-5.9.0/js/fontawesome.min.js"></script>
-  <script src="js/menuspy.js"></script>
-  <style>
-    table {
+    <!-- begin SEO -->
+    <title>Yushan's Homepage</title>
+    <meta property="og:locale" content="en">
+    <meta property="og:site_name" content="Yushan's Homepage">
+    <meta property="og:title" content="Yushan's Homepage">
+    <link rel="canonical" href="https://your-site.com/">
+    <meta property="og:url" content="https://your-site.com/">
+    <!-- end SEO -->
+
+    <meta name="google-site-verification" content="" />
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+    </script>
+
+    <!-- For all browsers -->
+    <link rel="stylesheet" href="css/main.css">
+    <meta http-equiv="cleartype" content="on">
+
+    <head>
+      <base target="_blank">
+    </head>
+
+    <!-- Favicon / Apple icons (optional) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/academicons.css"/>
+
+    <!-- MathJax (optional if you need it) -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "all" } },
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+    <!-- Custom style overrides (optional) -->
+    <style>
+      /* Increase base font size if desired */
+      body {
+        font-size: 17px;
+        line-height: 1.6;
+      }
+      /* Example custom table styling if needed */
+      table {
         width: 100%;
         border-collapse: collapse;
-    }
-    td {
+      }
+      td {
         vertical-align: middle;
         padding: 2.5%;
-    }
-    .text-column {
-        width: 63%;
-    }
-    .image-column {
-        width: 37%;
-    }
-    img {
-        width: 60%;
-        max-width: 100%;
-    }
-    .small-text {
-            font-size: 13px;
-        }
-</style>
-</head>
+      }
+      .small-text {
+        font-size: 13px;
+      }
+    </style>
 
-<body>
-  <section class="section">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-2">
-          <div class="sticky">
-            <figure class="image is-100*100">
-              <img class="is-rounded" src="http://scpsyl.github.io/images/kaguya.jpg">
-            </figure>
-            <div class="content">
-              <h2>刘昱杉</h2>
-              <h5>Yushan Liu</h5>
-              
-            </div>
-            <!-- details -->
-            <div class="details">
-              <!-- <h3>Email</h3> -->
-              <!-- <p>From a small town in the north of mainland China, trying to discover the origins of the world.</p> -->
-              <p><a href="mailto:liu-ys24@mails.tsinghua.edu.cn">
-                <span class="small-text">liu-ys24@mails.tsinghua.edu.cn</span>
-              </a></p>
-            </div>
-            <!-- social network icons -->
-            <div class="social">
-              <a href="https://github.com/scpsyl" target="_blank">
-                <span class="fab fa-github fa-2x" style="display:inline; text-decoration: none"></span>
-              </a>
-              <!-- <a href="liu-ys24@mails.tsinghua.edu.cn" target="_blank">
-                <span class="fas fa-envelope fa-2x" style="display:inline; text-decoration: none"></span> -->
-              </a>
-              <!-- <i class="fa-solid fa-envelope"></i> -->
-              <!-- <a href="https://scholar.google.com/citations?user=5NdPrUgAAAAJ&hl=en" target="_blank">
-                <span class="fab fa-google fa-2x" style="display:inline; text-decoration: none"></span>
-              </a>
-              <a href="https://www.linkedin.com/in/sfhan/" target="_blank">
-                <span class="fab fa-linkedin fa-2x" style="display:inline; text-decoration: none"></span>
-              </a> -->
-              <!--<a href="https://www.facebook.com/tianweishen.shen" target="_blank">-->
-                <!--<span class="fab fa-facebook fa-2x" style="display:inline; text-decoration: none"></span>-->
-              <!--</a>-->
-              <a href="https://x.com/LiuYS06893389" target="_blank">
-                <span class="fab fa-twitter fa-2x" style="display:inline; text-decoration: none"></span>
-              </a>
-              <a href="https://stackoverflow.com/users/22122834/ys-l" target="_blank">
-                <span class="fab fa-stack-overflow fa-2x" style="display:inline; text-decoration: none"></span>
-              </a>
-              <a href="https://www.youtube.com/@ysl-rl1ds" target="_blank">
-                <span class="fab fa-youtube fa-2x" style="display:inline; text-decoration: none"></span>
-              </a>
-              
-            </div>
+  </head>
 
+  <body>
 
-            <div id="sidebar" class="menu sticky is-hidden-mobile">
-              <p class="menu-label"><b>Quick Links</b></p>
-              <ul class="menu-list">
-                <!-- <li><a href="#news">News</a></li> -->
-                <li><a href="#intro">Intro</a></li>
-                <li><a href="#Education">Education</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Awards">Awards</a></li>
-                
-                
-                <!-- <li><a href="#research">Research</a></li> -->
-              </ul>
-            </div>
+    <!--[if lt IE 9]>
+    <div class="notice--danger align-center" style="margin: 0;">
+      You are using an <strong>outdated</strong> browser. Please 
+      <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    </div>
+    <![endif]-->
+
+    <!-- Masthead / Top menu -->
+    <div class="masthead">
+      <div class="masthead__inner-wrap">
+        <div class="masthead__menu">
+          <nav id="site-nav" class="greedy-nav">
+            <button><div class="navicon"></div></button>
+            <ul class="visible-links">
+              <!-- Example single home / language item -->
+              <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item">
+                <a href="#" target="_self">
+                  <img class="svg" src="/images/en.svg" width="20pt"> English
+                </a>
+              </li>
+
+              <!-- Example links to sections below -->
+              <li class="masthead__menu-item"><a href="#intro">Intro</a></li>
+              <li class="masthead__menu-item"><a href="#education">Education</a></li>
+              <li class="masthead__menu-item"><a href="#skills">Skills</a></li>
+              <li class="masthead__menu-item"><a href="#awards">Awards</a></li>
+            </ul>
+            <ul class="hidden-links hidden"></ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div id="main" role="main">
+      <!-- Sidebar (Profile box) -->
+      <div class="sidebar sticky">
+        <div itemscope itemtype="http://schema.org/Person" class="profile_box">
+
+          <div class="author__avatar">
+            <!-- Replace with your own photo if desired -->
+            <img src="images/kaguya.jpg" class="author__avatar" alt="Profile Photo" />
           </div>
 
+          <div class="author__content">
+            <h3 class="author__name" style="text-align:center;">刘昱杉 <br>(Yushan Liu)</h3>
+            <p class="author__bio" style="text-align:center;">Master’s Student <br>@ Tsinghua SIGS</p>
+          </div>
 
+          <div class="author__urls-wrapper">
+            <ul class="author__urls social-icons">
+              <!-- A short line about you or your research area -->
+              <li><div style="white-space: normal; margin-bottom: 1em;" style="text-align:center;">Embodied AI</div></li>
+              <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Shenzhen, China</li>
+              <li>
+                <a href="mailto:liu-ys24@mails.tsinghua.edu.cn">
+                  <i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email
+                </a>
+              </li>
+              <!-- Add social / external links as needed -->
+              <li>
+                <a href="https://github.com/scpsyl"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a>
+              </li>
+              <li>
+                <a href="https://x.com/LiuYS06893389"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i> Twitter</a>
+              </li>
+              <li>
+                <a href="https://stackoverflow.com/users/22122834/ys-l"><i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i> Stack Overflow</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@ysl-rl1ds"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube</a>
+              </li>
+            </ul>
 
+            <!-- Smaller icons for mobile view -->
+            <div class="author__urls_sm">
+              <a href="mailto:liu-ys24@mails.tsinghua.edu.cn">
+                <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
+              </a>
+              <a href="https://github.com/scpsyl">
+                <i class="fab fa-fw fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://x.com/LiuYS06893389">
+                <i class="fab fa-fw fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="https://stackoverflow.com/users/22122834/ys-l">
+                <i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.youtube.com/@ysl-rl1ds">
+                <i class="fab fa-fw fa-youtube" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="column">
-          <div class="content">
-            <!--News-->
-            <!-- <h2 id="news">
-              News
-            </h3> -->
-            <!-- <ul>
-              <li><span>April, 2024 - No news in S Town!!!</span></li>
-            </ul> -->
+      </div>
+      <!-- End sidebar -->
 
-            <!--Intro-->
+      <!-- Main content area -->
+      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+        <meta itemprop="headline" content="Yushan's Homepage">
+        <div class="page__inner-wrap">
+          <section class="page__content" itemprop="text">
+            
+            <!-- ========= Your Content Starts Here ========= -->
+            
+            <!-- Intro -->
+            <h1 id="intro">✍ Intro</h1>
             <table>
               <tr>
-                  <td class="text-column">
-                      <h2 id="intro">Intro</h2>
-                      <p>
-                          Yushan Liu received his B.S. degree in Electronic Information Science and Technology from 
-                          <a href="https://www.jlu.edu.cn/">Jilin University</a> in 2024. 
-                          Recently he is pursuing his M.S. degree in Data Science and Information Technology 
-                          at Smart Sensing and Robotics group <a href="https://ssr-group.net/index.html">(SSR Group)</a> 
-                          at <a href="https://www.sigs.tsinghua.edu.cn/">Tsinghua Shenzhen International School</a>. 
-                          He concentrated on the research topic of embodied AI under the guidance of 
-                          <a href="https://scholar.google.com/citations?user=xo2FkgIAAAAJ&hl=zh-CN">Prof. Wenbo Ding</a>
-                          and <a href="https://scholar.google.com/citations?user=1fzb_z8AAAAJ&hl=zh-CN&oi=sra" >Prof. Xiao-Ping Zhang</a> in SSR Group.
-                      </p>
-                  </td>
-                  <td class="image-column">
-                      <a href="images/zjz.png"><img alt="profile photo" src="images/zjz.png" class="hoverZoomLink"></a>
-                  </td>
+                <td style="width:63%">
+                  <p>
+                    I am <strong style="font-size:18px;">Yushan (刘昱杉)</strong>, an IEEE Student Member. 
+                    I received my B.S. degree in Electronic Information Science and Technology from 
+                    <a href="https://www.jlu.edu.cn/">Jilin University</a> in 2024. 
+                    I am currently pursuing an M.S. degree in Data Science and Information Technology 
+                    at the Smart Sensing and Robotics group <a href="https://ssr-group.net/index.html">(SSR Group)</a> of
+                    <a href="https://www.sigs.tsinghua.edu.cn/">Tsinghua Shenzhen International Graduate School</a>. 
+                    I concentrate on the research topic of embodied AI under the guidance of 
+                    <a href="https://scholar.google.com/citations?user=xo2FkgIAAAAJ&hl=zh-CN">Prof. Wenbo Ding</a> and 
+                    <a href="https://scholar.google.com/citations?user=1fzb_z8AAAAJ&hl=zh-CN&oi=sra">Prof. Xiao-Ping Zhang</a>.
+                  </p>
+                </td>
+                <td style="width:37%">
+                  <!-- Example image. Update the src to your own image or remove if not needed -->
+                  <img src="images/zjz.png" alt="Profile" style="width:60%; max-width:100%;">
+                </td>
               </tr>
-          </table>
-            <!-- [<a href = "">CV</a>].<br/><br/> -->
+            </table>
 
             <!-- Education -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <thead>
-                <tr>
-                  <td colspan="2">
-                    <h2 id="Education">Education</h2>
-                  </td>
-                </tr>
-              </thead>
+            <h1 id="education">📖 Education</h1>
+            <table style="border:0px; border-spacing:0px; border-collapse:separate; margin-right:auto; margin-left:auto;">
               <tbody>
                 <tr>
-                  <td style="padding:0px 20px 20px 20px;width:75%;vertical-align:middle">
+                  <td style="padding:0px 20px 20px 20px; width:75%; vertical-align:middle">
                     <a href="https://www.jlu.edu.cn/" style="font-size:18px; font-weight:bold;">Jilin University</a>
                     <br>
                     Bachelor's Degree • 2020 - 2024
                     <br>
                     Major: Electronic Information Science and Technology
-                    <br>
-                    <br>
+                    <br><br>
                   </td>
-                  <!-- 316*316 -->
-                  <td style="padding:0px 20px 0px 20px;width:20%;vertical-align:middle">
-                    <img src="images/JLULogo.png" width="75" height="75">
+                  <td style="padding:0px 20px 0px 20px; width:20%; vertical-align:middle">
+                    <img src="images/JLULogo.png" width="75" height="75" alt="JLU Logo">
                   </td>
                 </tr>
                 <tr>
-                  <td style="padding:0px 20px 20px 20px;width:75%;vertical-align:middle">
-                    <a href="https://www.sigs.tsinghua.edu.cn/" style="font-size:18px; font-weight:bold;">SIGS, Tsinghua University</a>
+                  <td style="padding:0px 20px 20px 20px; width:75%; vertical-align:middle">
+                    <a href="https://www.sigs.tsinghua.edu.cn/" style="font-size:18px; font-weight:bold;">
+                      Tsinghua Shenzhen International Graduate School
+                    </a>
                     <br>
-                    Master's Degree • 2024 - Now
+                    Master's Degree • 2024 - Present
                     <br>
                     Major: Electronics and Communications Engineering
                     <br>
-                    Advisor: <a href="https://scholar.google.com/citations?user=xo2FkgIAAAAJ&hl=zh-CN">Prof. Wenbo Ding</a>,  
-                    <a href="https://scholar.google.com/citations?user=1fzb_z8AAAAJ&hl=zh-CN&oi=sra">Prof. Xiao-Ping Zhang</a>
+                    Advisor: 
+                      <a href="https://scholar.google.com/citations?user=xo2FkgIAAAAJ&hl=zh-CN">Prof. Wenbo Ding</a>, 
+                      <a href="https://scholar.google.com/citations?user=1fzb_z8AAAAJ&hl=zh-CN&oi=sra">Prof. Xiao-Ping Zhang</a>
                     <br>
                   </td>
-                  <!-- 200*200 -->
-                  <td style="padding:0px 20px 0px 20px;width:20%;vertical-align:middle"> 
-                    <img src="images/THULogo.png" width="75" height="75">
+                  <td style="padding:0px 20px 0px 20px; width:20%; vertical-align:middle">
+                    <img src="images/THULogo.png" width="75" height="75" alt="THU Logo">
                   </td>
                 </tr>
               </tbody>
             </table>
-            
 
-            <!--Research-->
-            <!-- <h3 id="research">Research</h3>
-            <h4>2021</h4> -->
-
-            <!-- <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="http://hansf.me/images/research/compnet.gif">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <i>Compositionally Generalizable 3D Structure Prediction</i><br>
-                    <b>Songfang Han</b>, Jiayuan Gu, Kaichun Mo, Li Yi, Siyu Hu, Xuejin Chen, Hao Su.<br>
-                    arXiv, 2021.<br>
-                    <a href="https://arxiv.org/abs/2012.02493" target="_blank">[<u>paper</u>]</a>
-                    <a href="https://github.com/hansongfang/CompNet" target="_blank">[<u>code</u>]</a>
-                    <a href="https://youtu.be/a1Mghtz3erM" target="_blank">[<u>video</u>]</a><br>
-                  </p>
-                </div>
-              </div>
-            </article> -->
-
-            <!-- <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="http://hansf.me/images/research/noisy_label.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <i>Learning with Noisy Labels for Robust Point Cloud Segmentation</i><br>
-                    Shuquan Ye, Dongdong Chen, <b>Songfang Han</b>, Jing Liao.<br>
-                    International Conference on Computer Vision (ICCV Oral), 2021<br>
-                    <a href="https://shuquanye.com/PNAL_website/" target="_blank">[<u>project (code)</u>]</a>
-                    <a href="https://arxiv.org/abs/2107.14230" target="_blank">[<u>paper</u>]</a>
-                    <a href="https://github.com/pleaseconnectwifi/PNAL" target="_blank">[<u>code</u>]</a>
-                  </p>
-                </div>
-              </div>
-            </article> -->
-
-            <!-- <article class="columns">
-              <div class="column is-3">
-                <figure class="image">
-                  <img src="http://hansf.me/images/research/m3d-vton.png">
-                </figure>
-              </div>
-              <div class="column">
-                <div class="content">
-                  <p>
-                    <i>M3D-VTON: A Monocular-to-3D Virtual Try-On Network</i><br>
-                    Fuwei Zhao, Zhenyu Xie, Michael Kampffmeyer, Haoye Dong, <b>Songfang Han</b>, Tianxiang Zheng, Tao Zhang, Xiaodan Liang.<br>
-                    International Conference on Computer Vision (ICCV), 2021.<br>
-                    <a href="https://arxiv.org/abs/2108.05126" target="_blank">[<u>paper</u>]</a>
-                    <a href="https://github.com/fyviezhao/m3d-vton" target="_blank">[<u>code</u>]</a>
-                  </p>
-                </div>
-              </div>
-            </article> -->
-
-            
             <!-- Skills -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <thead>
-                <tr>
-                  <td colspan="2">
-                    <h2 id="Skills">Skills</h2>
-                  </td>
-                </tr>
-              </thead>
+            <h1 id="skills">🔨 Skills</h1>
+            <table style="border:0px; border-spacing:0px; border-collapse:separate; margin-right:auto; margin-left:auto;">
               <tbody>
-                <!-- Coding Skills -->
                 <tr>
-                  <td style="padding:0px 20px 20px 20px;width:100%;vertical-align:middle">
-                    <strong style="font-size:18px;">Programming Languages</strong>
-                    <br>
-                    <strong>Proficient in: </strong> Python, C
-                    <br>
-                    <strong>Experienced in: </strong> C++, Verilog, JavaScript, MATLAB
-                    <br>
-                    <br>
+                  <td style="padding:0px 20px 20px 20px; width:100%; vertical-align:middle">
+                    <strong style="font-size:18px;">Programming Languages</strong><br>
+                    <strong>Proficient in:</strong> Python, C<br>
+                    <strong>Experienced in:</strong> C++, Verilog, JavaScript, MATLAB
+                    <br><br>
                   </td>
                 </tr>
-                <!-- Tools & Frameworks -->
-                <!-- <tr>
-                  <td style="padding:0px 20px 20px 20px;width:100%;vertical-align:middle">
-                    <strong style="font-size:18px;">Tools & Frameworks</strong>
-                    <br>
-                    <strong>Proficient:</strong> TensorFlow, ROS, Git
-                    <br>
-                    <strong>Experienced:</strong> OpenCV, Docker, PyTorch
-                    <br>
-                    <br>
-                  </td>
-                </tr> -->
-                <!-- Languages -->
                 <tr>
-                  <td style="padding:0px 20px 20px 20px;width:100%;vertical-align:middle">
-                    <strong style="font-size:18px;">Languages</strong>
-                    <br>
-                    <!-- <strong>Proficient:</strong> English (Professional Proficiency), Chinese (Native) -->
+                  <td style="padding:0px 20px 20px 20px; width:100%; vertical-align:middle">
+                    <strong style="font-size:18px;">Languages</strong><br>
                     Chinese (Native), English (Fluent), Japanese (Basic Proficiency)
-                    <br>
-                    <!-- <strong>Experienced:</strong> Japanese (Basic Proficiency) -->
-                    <br>
-                    <br>
+                    <br><br>
                   </td>
                 </tr>
               </tbody>
             </table>
+
             <!-- Awards -->
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <thead>
-                <tr>
-                  <td colspan="2">
-                    <h2 id="Awards">Awards</h2>
-                  </td>
-                </tr>
-              </thead>
-              <tbody>
-                <!-- Academic Awards -->
-                <tr>
-                  <td style="padding:0px 20px 20px 20px;width:100%;vertical-align:middle">
-                    <!-- <strong style="font-size:18px;">Academic Awards</strong> -->
-                    <br>
-                    <strong>2nd Prize Winner:</strong> National Undergraduate Electronics Design Contest, 2022
-                    <br>
-                    <strong>2nd Prize Winner:</strong>  National Student Robotics Competition Robomaster High School Competition, 2023
-                    <br>
-                    
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <h1 id="awards">🗡Awards</h1>
+            <ul>
+              <li><strong>2nd Prize</strong> – National Undergraduate Electronics Design Contest, 2022</li>
+              <li><strong>2nd Prize</strong> – National Student Robotics Competition Robomaster High School Competition, 2023</li>
+            </ul>
 
+            <!-- ========= Your Content Ends Here ========= -->
+            <p><span class="anchor" id="-News"></span></p>
+            <h1 id="-news">🔥 News</h1>
 
+            <p>[2025/01] SSR Group held the 2024 Annual Summary Meeting in Shenzhen, China!</p>
 
-          </div>
+            <h1 id="visit-map">🗺️ Visit Map</h1>
+            <p>
+              <!-- ClustrMaps recommended JS snippet -->
+              <script
+                type="text/javascript"
+                id="clustrmaps"
+                src="//clustrmaps.com/map_v2.js?d=jqM3OsLKDOV6pZgEmHN8XzGbtez0ersq6bX_o9JVH9k&cl=ffffff&w=a">
+              </script>
+            </p>
+          </section>
         </div>
+      </article>
+    </div><!-- end #main -->
+
+    <!-- JS scripts -->
+    <script src="js/main.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics (optional) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', "YOUR_GA_ID");
+    </script> -->
+
+    <!-- Footer (optional) -->
+    <div class="footer_site">
+      <hr/>
+      <div class="footer_copyright">
+        © 2025 · Yushan's Homepage | Powered by &nbsp;
+        <a class="page_a" href="https://github.com/RayeRen/acad-homepage.github.io">the acad</a>
       </div>
     </div>
-  </section>
-
-  <script>
-    var elm = document.querySelector('#sidebar');
-    var ms = new MenuSpy(elm, {
-      activeClass: 'is-active'
-    });
-  </script>
-</body>
-
+  </body>
 </html>
