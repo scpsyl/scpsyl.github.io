@@ -540,6 +540,68 @@
         .toast.show {
             opacity: 1;
         }
+
+        /* Sub-section headers */
+        .sub-section-title {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #555;
+            margin: 30px 0 18px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .sub-section-title:first-child {
+            margin-top: 0;
+        }
+
+        /* Other publications compact list */
+        .other-pub-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .other-pub-list li {
+            font-size: 16px;
+            line-height: 1.7;
+            padding: 12px 16px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            border: 1px solid #eee;
+            transition: all 0.3s ease;
+        }
+
+        .other-pub-list li:hover {
+            background: #fafafa;
+            border-color: #ddd;
+        }
+
+        .other-pub-list .other-pub-title {
+            font-family: 'EB Garamond', Georgia, serif;
+            font-size: 17px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .other-pub-list .other-pub-authors {
+            font-family: 'EB Garamond', Georgia, serif;
+            font-size: 15px;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        .other-pub-list .other-pub-authors strong {
+            color: #2563eb;
+            font-weight: 600;
+        }
+
+        .other-pub-list .other-pub-venue {
+            font-size: 14px;
+            color: #888;
+            font-style: italic;
+            margin-top: 2px;
+        }
     </style>
 </head>
 <body>
@@ -631,6 +693,8 @@
             </div>
             <div class="section-content">
 
+                <h3 class="sub-section-title">Selected Publications</h3>
+
                 <div class="publication">
                     <div class="pub-img">
                         <img src="images/future-vla.png" alt="Future VLA">
@@ -708,6 +772,15 @@
                     </div>
                 </div>
 
+                <h3 class="sub-section-title">Other Publications</h3>
+
+                <ul class="other-pub-list">
+                    <li>
+                        <div class="other-pub-title">Self-Supervised Mask-Aware Transformers for Fault-Tolerant FBG Force Sensing in Minimally Invasive Surgical Robotics</div>
+                        <div class="other-pub-authors">Peibo Sun, Shiyuan Dong, Shucheng Ye, Jianrong Cai, <strong>Yushan Liu</strong>, Hongen Liao, Tianqi Huang, Fang Chen†</div>
+                        <div class="other-pub-venue">Under Review</div>
+                    </li>
+                </ul>
                 
             </div>
         </div>
@@ -738,7 +811,8 @@
                     <li>[2024/07] Yushan joined Tsinghua <b>SSR Group</b> as a master's student.</li>
                     <li>[2025/06] One paper has been accepted by IROS 2025.</li>
                     <li>[2025/09] Yushan started internship as algorithm intern at <b>JD Technology</b>.</li>
-                    <li>[2026/02]Our paper <b>AVR</b> has been accepted by ICRA 2026!</li>
+                    <li>[2026/02] Our paper <b>AVR</b> has been accepted by ICRA 2026!</li>
+                    <li>[2026/02] Yushan received the ICRA 2026 Travel Grant. See you in Vienna!</li>
                 </ul>
             </div>
         </div>
