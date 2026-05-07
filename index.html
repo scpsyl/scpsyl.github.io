@@ -675,10 +675,10 @@
                     <div class="education-item">
                         <img src="images/amaplogo.png" alt="Amap" class="edu-logo">
                         <div class="edu-content">
-                            <h3>Amap (高德)</h3>
-                            <p>Research Intern (研究实习生)</p>
+                            <h3>Amap CV Lab</h3>
+                            <p>Research Intern </p>
                             <p>2026.03 - Present</p>
-                            <p>Research Focus: Foundation Model, Vision-Language-Action (VLA)</p>
+                            <p>Research Focus: World Action Model (WAM), Vision-Language-Action (VLA)</p>
                         </div>
                     </div>
                 </div>
@@ -686,8 +686,8 @@
                     <div class="education-item">
                         <img src="images/JDLogo.jpg" alt="JD Technology" class="edu-logo">
                         <div class="edu-content">
-                            <h3>JD Technology (京东科技)</h3>
-                            <p>Algorithm Intern (算法实习生)</p>
+                            <h3>JD Technology </h3>
+                            <p> Embodied Algorithm Intern </p>
                             <p>2025.09 - 2026.01</p>
                             <p>Research Focus: Vision-Language-Action (VLA), Post-training RL</p>
                         </div>
@@ -705,6 +705,25 @@
             <div class="section-content">
 
                 <h3 class="sub-section-title">Selected Publications</h3>
+
+                <div class="publication">
+                    <div class="pub-img">
+                        <img src="images/OA-WAM.png" alt="OA-WAM">
+                    </div>
+                    <div class="pub-content">
+                        <div class="pub-title">
+                            <span class="pub-title-highlight">OA-WAM:</span>
+                            <span class="pub-title-fade">Object-Aware World Action Model for Vision-Language-Action Tasks</span>
+                        </div>
+                        <div class="pub-authors"><strong>Yushan Liu</strong>, Peibo Sun, Shoujie Li, Yifan Xie, Lingfeng Zhang, Xintao Chao, Shiyuan Dong, Fang Chen, Xiao-Ping Zhang, Wenbo Ding†</div>
+                        <div class="pub-venue">Under Review</div>
+                        <div class="pub-links">
+                            <!-- <a href="https://arxiv.org/pdf/2602.15882"><i class="fas fa-file-pdf"></i> PDF</a> -->
+                            <!-- <a href="https://www.youtube.com/watch?v=eo7z8qmaCy0"><i class="fas fa-video"></i> Video</a> -->
+                            <!-- <a href="https://avr-robot.github.io/"><i class="fas fa-globe"></i> Website</a> -->
+                        </div>
+                    </div>
+                </div>
 
                 <div class="publication">
                     <div class="pub-img">
@@ -825,7 +844,7 @@
                     <li>[2026/01] Yushan ended internship as algorithm intern at <b>JD Technology</b> (with retention offer).</li>
                     <li>[2026/02] Our paper <b>AVR</b> has been accepted by ICRA 2026!</li>
                     <li>[2026/02] Yushan received the ICRA 2026 Travel Grant. See you in Vienna!</li>
-                    <li>[2026/03] Yushan started internship as research intern at <b>Amap</b>.</li>
+                    <li>[2026/03] Yushan started internship as research intern at <b>Amap CV Lab</b>.</li>
                 </ul>
             </div>
         </div>
@@ -855,9 +874,9 @@
         }
 
         function copyWechat() {
-            const wechatId = 'Lys13125887750';
+            const wechatId = 'LYS-200309';
             navigator.clipboard.writeText(wechatId).then(() => {
-                showToast('WeChat ID copied: ' + wechatId);
+                showToast('WeChat ID copied to clipboard');
             }).catch(() => {
                 showToast('Failed to copy WeChat ID');
             });
