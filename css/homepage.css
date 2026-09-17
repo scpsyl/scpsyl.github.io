@@ -1,0 +1,163 @@
+:root {
+  color-scheme: light dark;
+  background: light-dark(#ffffff, #191a1b);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  font-weight: 500;
+  cursor: pointer;
+  text-underline-offset: 2px;
+}
+
+b, strong {
+  font-weight: 500;
+}
+
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+@font-face {
+  font-family: 'Literata';
+  font-style: italic;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(../fonts/homepage/literata-latin-italic.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Literata';
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url(../fonts/homepage/literata-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(../fonts/homepage/newsreader-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Homepage Name Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/homepage/name-serif.woff2) format('woff2');
+  unicode-range: U+5218, U+6631, U+6749;
+}
+
+
+  #homepage { background: transparent; width: 100%; }
+  #homepage * { box-sizing: border-box; }
+  #homepage .academic-page {
+    --paper: light-dark(#ffffff, #191a1b);
+    --ink: light-dark(#242424, #e7e5e0);
+    --secondary-ink: light-dark(#5b5b58, #bdbbb6);
+    --link-ink: light-dark(#315b79, #a3bed3);
+    --reading-font: 'Literata', Georgia, serif;
+    --heading-font: 'Newsreader', Georgia, serif;
+    --body-size: 16.5px;
+    --paper-size: 16.5px;
+    --author-size: 14px;
+    --name-size: 44px;
+    background: var(--paper); color: var(--ink);
+    font: 400 var(--body-size)/1.65 var(--reading-font);
+    font-optical-sizing: auto;
+    font-kerning: normal;
+    font-variant-ligatures: common-ligatures;
+    text-rendering: optimizeLegibility;
+    padding: 40px clamp(20px, 5vw, 42px) 36px;
+    max-width: 860px; margin: 0 auto;
+    overflow-wrap: anywhere;
+  }
+  #homepage p { margin: 0 0 13px; }
+  #homepage a { color: var(--link-ink); text-decoration: none; }
+  #homepage a:hover { text-decoration: underline; }
+  #homepage h1, #homepage h2 { font-family: var(--heading-font); color: var(--ink); font-optical-sizing: auto; }
+  #homepage h1 { font-size: var(--name-size); font-weight: 400; line-height: 1.12; letter-spacing: -0.7px; margin: 0 0 10px; }
+  #homepage .chinese-name { font-family: 'Homepage Name Serif', 'Songti SC', 'Noto Serif CJK SC', serif; font-size: 24px; letter-spacing: 1px; white-space: nowrap; font-weight: 400; display: inline-block; margin-left: 8px; }
+  #homepage h2 { font-size: 28px; font-weight: 400; line-height: 1.2; letter-spacing: -0.25px; margin: 30px 0 15px; }
+  #homepage .intro { margin-bottom: 17px; text-align: center; }
+  #homepage .bio-layout { display: grid; grid-template-columns: minmax(0, 1fr) 150px; column-gap: 30px; align-items: center; }
+  #homepage .intro-body { grid-column: 1; grid-row: 1; min-width: 0; }
+  #homepage .intro-body p:last-child { margin-bottom: 0; }
+  #homepage .portrait { display: block; grid-column: 2; grid-row: 1; width: 150px; height: auto; }
+  #homepage .contact { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; column-gap: 13px; row-gap: 4px; margin: 0; font-size: var(--author-size); }
+  #homepage .contact span { color: var(--secondary-ink); }
+  #homepage .news { display: grid; grid-template-columns: 70px minmax(0, 1fr); gap: 5px 17px; margin: 0; font-size: var(--author-size); }
+  #homepage .news dt { color: var(--secondary-ink); font-variant-numeric: lining-nums tabular-nums; }
+  #homepage .news dd { margin: 0; }
+  #homepage .publication { display: grid; grid-template-columns: 154px minmax(0, 1fr); gap: 24px; align-items: center; margin: 24px 0 34px; }
+  #homepage .publication:last-child { margin-bottom: 0; }
+  #homepage .teaser { width: 100%; height: auto; display: block; }
+  #homepage .paper-title { font-family: var(--reading-font); margin: 0 0 8px; font-size: var(--paper-size); font-weight: 500; line-height: 1.45; letter-spacing: 0; }
+  #homepage .paper-title a { color: var(--ink); }
+  #homepage .paper-title a:hover { color: var(--link-ink); }
+  #homepage .authors { font-size: var(--author-size); color: var(--secondary-ink); margin: 0 0 7px; line-height: 1.5; }
+  #homepage .authors strong { font-weight: 500; color: var(--ink); }
+  #homepage .venue { font-size: var(--author-size); margin: 0 0 5px; }
+  #homepage .paper-links { display: flex; gap: 12px; flex-wrap: wrap; font-size: var(--author-size); margin: 0; }
+  #homepage .venue { color: var(--secondary-ink); }
+  #homepage .history { display: grid; gap: 17px; }
+  #homepage .history-item { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 3px 22px; align-items: baseline; }
+  #homepage .history-heading { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0 9px; min-width: 0; }
+  #homepage .history-item h3 { font-family: var(--reading-font); font-size: var(--paper-size); font-weight: 500; line-height: 1.5; color: var(--ink); margin: 0; }
+  #homepage .history-role { font-size: var(--author-size); font-weight: 400; color: var(--secondary-ink); }
+  #homepage .history-date { font-size: var(--author-size); color: var(--secondary-ink); font-variant-numeric: lining-nums tabular-nums; white-space: nowrap; align-self: baseline; }
+  #homepage .history-detail { grid-column: 1 / -1; font-size: var(--author-size); line-height: 1.55; color: var(--secondary-ink); margin: 0; }
+  #homepage .experience-section, #homepage .awards-section { margin-top: 32px; }
+  #homepage .awards { padding: 0 0 0 19px; margin: 0; font-size: var(--author-size); }
+  #homepage .awards li { padding-left: 4px; margin: 0 0 9px; }
+  #homepage .awards strong { font-weight: 500; }
+  #homepage .site-footer { margin-top: 45px; padding-top: 18px; font-size: 12px; color: var(--secondary-ink); }
+  #homepage .site-footer p { margin: 0; }
+  @media (max-width: 560px) {
+    #homepage .bio-layout { display: flow-root; }
+    #homepage .portrait { float: right; width: 96px; height: auto; margin: 4px 0 10px 18px; }
+    #homepage h1 { font-size: 36px; }
+    #homepage .chinese-name { display: block; font-size: 21px; margin: 8px 0 0; }
+    #homepage .publication { grid-template-columns: 1fr; gap: 13px; }
+    #homepage .teaser { max-width: 240px; }
+    #homepage .history-item { grid-template-columns: 1fr; gap: 4px; }
+    #homepage .history-date { grid-row: 2; }
+    #homepage .history-detail { grid-row: 3; }
+    #homepage .history-separator { display: none; }
+  }
+  @media (pointer: coarse) {
+    #homepage .contact a, #homepage .paper-links a { display: inline-flex; align-items: center; min-height: 44px; }
+  }
+
+
+#homepage .visit-map {
+  margin-top: 32px;
+}
+
+#homepage .visit-map-content {
+  max-width: 520px;
+}
+
+#homepage .visit-map-content img,
+#homepage .visit-map-content iframe {
+  max-width: 100%;
+}
+
+#homepage .visit-map-content img {
+  height: auto;
+}
